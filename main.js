@@ -1,6 +1,7 @@
 let playerWins = 0;
 let computerWins = 0;
 let rounds = 0;
+const roundsDisplay = document.querySelector(".rounds span");
 const userScore = document.querySelector(".score .user-score");
 const computerScore = document.querySelector(".score .computer-score");
 const gameResult = document.querySelector(".score .game-result");
@@ -27,7 +28,9 @@ function game(playerSelection, computerSelection) {
     }
 
     gameResult.innerText = `${result}`;
+    
     rounds++;
+    roundsDisplay.innerText = `Round: 0${rounds}`;
 
     if (rounds == 5 || playerWins == 3 || computerWins == 3) {
         // Declaring the winner of the tie based on the results of wins
