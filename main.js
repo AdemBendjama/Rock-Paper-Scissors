@@ -28,11 +28,6 @@ function game(playerSelection, computerSelection) {
     }
 
     gameResult.innerText = `${result}`;
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> rps-ui
     rounds++;
     roundsDisplay.innerText = `Round: 0${rounds}`;
 
