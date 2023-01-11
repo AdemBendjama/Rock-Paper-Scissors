@@ -5,23 +5,43 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Rock Paper Scissors</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="shortcut icon" href="/resources/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
     <script src='main.js' defer></script>
 </head>
 <body>
 
-    <button onclick="game('rock', getComputerChoice())">Rock</button>
-    <button onclick="game('paper', getComputerChoice())">Paper</button>
-    <button onclick="game('scissors', getComputerChoice())">Scissors</button>
+    <div class="container">
+        <div class="game">
+            <section class="section-1">
+                <div class="rounds">
+                    <span>Round: 01</span>
+                </div>
 
-    <div class="display">
-        <div class="score">
-            <span class="user-score">You: 0</span>
-            <span class="computer-score">AI: 0</span>
+                <div class="game-options">
+                    <img src="resources/rock-512.png" alt="icon of a rock and some grass"
+                        onclick="game('rock', getComputerChoice())">
+                    <img src="resources/leaf-512.png" alt="icon of 2 leaves"
+                        onclick="game('paper', getComputerChoice())">
+                    <img src="resources/scissors-512.png" alt="icon of farming scissors"
+                        onclick="game('scissors', getComputerChoice())">
+                </div>
+            </section>
+            <section class="section-2">
+                <div class="score">
+
+                    <span class="user-score">You: 0</span>
+                    <span class="computer-score">AI: 0</span>
+
+                </div>
+                <div class="score">
+                    <span class="game-result"></span>
+
+                </div>
+            </section>
         </div>
-        <div class="score">
-            <span class="game-result"></span>
-        </div>
+        <a href="https://www.flaticon.com/authors/dreamcreateicons" target="_blank" class="artist-credit"
+            title="rocks,scissors,leaves icons">icons created by Dreamcreateicons - Flaticon</a>
     </div>
-
 </body>
 </html>
